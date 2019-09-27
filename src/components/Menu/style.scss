@@ -1,0 +1,101 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  padding: 12px 65px;
+
+  .title {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: #172B4D;
+    letter-spacing: 0.16px;
+  }
+
+  .toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 530px;
+    padding: 10px 0;
+
+    i {
+      padding: 5px 8px;
+      font-size: 20px;
+      color: #67C462;
+    }
+
+    p {
+      margin: 0;
+      padding: 5px 0;
+      font-weight: 500;
+    }
+  }
+
+  .notification {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    padding: 10px 0;
+
+    i {
+      padding: 5px 0;
+      font-size: 20px;
+      color: #637381;
+    }
+
+    .badge {
+      position: absolute;
+      top: 13px;
+      right: 24px;
+      display: block;
+      text-align: center;
+      width: 14px;
+      height: 14px;
+      background-color: #DE3618;
+      border-radius: 100%;
+      color: #ffffff;
+
+      p {
+        margin: 0;
+        padding: 1px 0;
+        font-size: 10px;
+      }
+    }
+  }
+
+  .user {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 190px;
+    padding: 9px 0;
+
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .initial {
+      display: flex;
+      justify-content: center;
+      background-color: #D8D8D8;
+      border-radius: 100%;
+      width: 32px;
+      height: 32px;
+  
+      p {
+        padding: 7px 0;
+      }
+    }
+  
+    .username {
+      display: flex;
+      justify-content: center;
+  
+      p {
+        padding: 7px 10px;
+      }
+    }
+  }
+}
