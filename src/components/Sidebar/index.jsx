@@ -1,5 +1,7 @@
 // react
 import React from 'react';
+// router
+import { Link } from 'react-router-dom';
 // style
 import './style.scss';
 // image
@@ -10,34 +12,39 @@ import payment from '../../images/payment.svg';
 const Sidebar = () => (
   <div>
     <div className="sidebar">
-      <div className="link">
-        <a href="/">
+      <div className="link active">
+        <Link to="/">
           <img src={dashboard} alt="dashboard"/> Dashboard
-        </a>
+        </Link>
       </div>
       <div className="link">
-        <a href="/">
-          <img src={balances} alt="dashboard"/> Payments
-        </a>
+        <Link to="/balances">
+          <img src={balances} alt="dashboard"/> Balances
+        </Link>
       </div>
       <div className="link">
-        <a href="/">
+        <Link to="/">
+          <img src={payment} alt="dashboard"/> Payments
+        </Link>
+      </div>
+      <div className="link">
+        <Link to="/transfers">
           <img src={payment} alt="dashboard"/> Transfers
-        </a>
+        </Link>
       </div>
       <div className="link">
-        <a href="/">
+        <Link to="/">
           <img src={payment} alt="dashboard"/> Developers
-        </a>
+        </Link>
       </div>
       <div className="link">
-        <a href="/">
+        <Link to="/">
           <img src={payment} alt="dashboard"/> Settings
-        </a>
+        </Link>
       </div>
     </div>
     <div className="payment">
-      <i class="fas fa-plus"></i>
+      <i className="fas fa-plus"></i>
       <p>Accept payment</p>
     </div>
   </div>
