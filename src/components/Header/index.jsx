@@ -2,6 +2,8 @@
 import React from 'react';
 // style
 import './style.scss';
+// image
+import chevron from '../../images/chevron.svg';
 
 const Header = () => (
   <div className="header">
@@ -9,6 +11,7 @@ const Header = () => (
       <p>B</p>
     </div>
     <p>Business Name</p>
+    <img src={chevron} alt="down"/>
   </div>
 );
 
