@@ -1,10 +1,193 @@
-.card {
+.card, .card-transfers, .card-balances {
   max-width: 934px;
   width: 100%;
-  min-height: 300px;
+  min-height: 295px;
   margin: 0 auto;
   background-color: #ffffff;
   border: 1px solid #DFE1E6;
   border-radius: 5px;
   box-shadow: 1px 3px 6px rgba(15, 15, 15, 0.10000000149011612);
+}
+
+.card-balances {
+  .title-header, .row {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    padding: 0 20px;
+    border-bottom: 1px solid #DFE1E6;
+    font-size: 16px;
+    color: #6B778C;
+  }
+
+  .row {
+    height: 80px;
+
+    .name {
+      height: 40px;
+      margin: 20px 0;
+
+      p {
+        margin: 0;
+        padding-left: 10px;
+        padding: 10px 0 10px 10px;
+      }
+    }
+
+    .bitcoin {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-color: #ffffff;
+      text-align: center;
+
+      i {
+        margin-top: 5px;
+        font-size: 30px;
+        color: #F5B300;
+      }
+    }
+
+    .ethereum {
+      width: 30px;
+      height: 30px;
+      margin-top: 5px;
+      border-radius: 100%;
+      background-color: #6B778C;
+      text-align: center;
+
+      i {
+        padding: 2px 0;
+        font-size: 25px;
+        color: #ffffff;
+      }
+    }
+
+    .naira {
+      width: 25px;
+      height: 25px;
+
+      img {
+        width: 100%;
+        margin-top: 5px;
+      }
+    }
+
+    .pending, .available {
+      margin: 23px 0;
+
+      p {
+        margin: 0;
+      }
+      .crypto {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .currency {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .even {
+    background-color: #F9F9FA;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: row;
+    max-width: 334px;
+    width: 100%;
+  }
+
+  .pending, .available {
+    max-width: 300px;
+    width: 100%;
+    text-align: right;
+  }
+}
+
+.card-transfers {
+  display: flex;
+  flex-direction: column;
+  min-height: 55px;
+
+  .new-transfer {
+    display: flex;
+    justify-content: flex-end;
+    height: 65px;
+
+    .button{
+      width: 132px;
+      height: 28px;
+      margin: 24px 34px 15px;
+      background-color: #67C462;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5px 0;
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        color: #ffffff;
+      }
+
+      i {
+        padding: 4px 0 0 8px;
+        font-size: 10px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .title-header {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    padding: 0 20px;
+    background-color: #F9F9FA;
+    border-top: 1px solid #DFE1E6;
+    border-bottom: 1px solid #DFE1E6;
+    font-size: 16px;
+    color: #6B778C;
+
+    .name {
+      display: flex;
+      flex-direction: row;
+      max-width: 334px;
+      width: 100%;
+    }
+  
+    .pending, .available {
+      max-width: 300px;
+      width: 100%;
+      text-align: right;
+    }
+  }
+
+  .transfer-details {
+    width: 900px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 74px 0;
+    text-align: center;
+
+    h3 {
+      margin: 0;
+      font-size: 24px;
+      color: #42526E;
+    }
+
+    p {
+      margin: 5px 0 0 0;
+      color: #42526E;
+    }
+  }
 }
