@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 23px 0;
+
+  p {
+    margin: 0;
+  }
+
+  .logo {
+    width: 25px;
+    margin: 0 15px;
+    padding: 2px 0;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 11px; 
+    box-shadow: 0px 1px 3px #88888888;
+  }
+}
