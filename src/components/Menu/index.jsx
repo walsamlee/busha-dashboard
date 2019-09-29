@@ -10,7 +10,9 @@ const Menu = () => {
   const page = getPage();
   return (
     <div className="main">
-      <h2 className="title">{page ? toSentenceCase(page) : 'Dashboard'}</h2>
+      <div className="title">
+        <h2>{page ? toSentenceCase(page) : 'Dashboard'}</h2>
+      </div>
       <div className="toggle">
         <i className="fas fa-toggle-on"></i>
         <p>Test mode</p>

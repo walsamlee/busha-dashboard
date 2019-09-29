@@ -4,18 +4,22 @@
   padding: 12px 65px;
 
   .title {
-    margin: 0;
-    font-size: 32px;
-    font-weight: 600;
-    color: #172B4D;
-    letter-spacing: 0.16px;
+    width: 546px;
+
+    h2 {
+      margin: 5px 0;
+      font-size: 32px;
+      font-weight: 600;
+      color: #172B4D;
+      letter-spacing: 0.16px;
+    }
   }
 
   .toggle {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 530px;
+    width: 120px;
     padding: 10px 0;
 
     i {
