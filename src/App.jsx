@@ -8,7 +8,6 @@ import Sidebar from './components/Sidebar';
 import Balances from './components/Balances';
 import Card from './components/Card';
 import Header from './components/Header';
-import Menu from './components/Menu';
 import Transfers from './components/Transfers';
 // style
 import './App.css';
@@ -22,7 +21,6 @@ function App() {
           <Sidebar />
         </div>
         <div className="menubar">
-          <Menu />
           <Switch>
             <Route exact path="/" component={Card}  />
             <Route exact path="/balances" component={Balances}  />
